@@ -111,6 +111,8 @@ html, body {
 @media (max-width: 767px) {
   .wrap .card {
     font-size: 30px;
+    margin-top: 35px;
+    margin-bottom: 35px;
   }
 }
 @media (max-width: 620px) {
@@ -130,6 +132,7 @@ html, body {
   margin: 5px;
   border-radius: 50px;
   text-align: center;
+  white-space: nowrap;
   box-shadow: inset 0px 0px 50px 0px #ABABAB, 5px 5px 5px 1px #242424;
   -webkit-box-shadow: inset 0px 0px 50px 0px #ABABAB, 5px 5px 5px 1px #242424;
   -moz-box-shadow: inset 0px 0px 50px 0px #ABABAB, 5px 5px 5px 1px #242424;
@@ -215,6 +218,12 @@ html, body {
   -o-box-shadow: inset 0px 0px 50px 0px #ABABAB, 5px 5px 5px 1px #242424;
   background: #242424;
 }
+@media (max-width: 767px) {
+  .wrap .card .card-mid .info {
+    padding: 5px;
+    margin: 10px 0;
+  }
+}
 .wrap .card .card-mid .info.no2 {
   color: #000;
   background: #FFF;
@@ -275,6 +284,13 @@ html, body {
   -o-box-shadow: inset 0px 0px 50px 0px #ABABAB, 5px 5px 5px 1px #242424;
   background: #242424;
 }
+@media (max-width: 620px) {
+  .wrap .card .card-down .expected {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
 .wrap .card .card-down .expected.no2 {
   color: #000;
   background: #FFF;
@@ -286,7 +302,13 @@ html, body {
 }
 @media (max-width: 1300px) {
   .wrap .card .card-down .expected p {
-    padding: 20px 20px;
+    padding: 20px;
+  }
+}
+@media (max-width: 620px) {
+  .wrap .card .card-down .expected p {
+    display: block;
+    padding: 0;
   }
 }
 .wrap .card .card-down .expected h2 {
